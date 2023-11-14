@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!-- loginClient.html                                                                                                      -->                                                                                                      
+<!-- Taller de maquetado - aplicación ejemplo Mesa de Ayuda                                                                -->                                                                                                      
+<!-- Dr. Pedro E. Colla                                                                                                    -->                                                                                                      
+<!-- UADER - Ingeniería de Software I                                                                                      -->                                                                                                      
+<!--------------------------------------------------------------------------------------------------------------------------->
+
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>POST Form Data as JSON with JavaScript Fetch API</title>
+
+    </head>
+<body>
+
+
+    <!-- Formulario para enviar los datos -->    
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <img src="imgLogin.png" class="w-100 image-container" alt="Nuestra imagen corporativa">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <form class="form  w-75 mx-auto shadow-lg p-3 mb-5 rounded-5" method="GET" width="100px" border="1">
+                    <br>
+                    <div><h1 class="text-center fw-bold font-monospace">Bienvenido</h1></div>
+                    <div>
+                        <div class="form-group py-2 ">
+                            <label class="fw-medium" for="cliForm">Usario</label>
+                            <input type="text" class="form-control txt" name="id" placeholder="id">              
+                        </div>
+                        <div class="form-group py-2">
+                            <label class="fw-medium" for="passForm">Password</label>
+                            <input type="password" class="form-control txt" name="password" placeholder="password">
+                        </div>
+                        <div class="d-flex justify-content-arround">
+                            <div class="p-2"><a href="http://127.0.0.1:5501/loginClient.html">Nuevo cliente</a></div>
+                            <div class="p-2"><a href="http://127.0.0.1:5501/loginClient.html">¿Olvido su password?</a></div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="termscondition" type="checkbox">
+                        <label class="form-check-label">
+                          Aceptolos términos y condiciones del sistema (S.E.u.O)
+                        </label>
+                      </div>
+                    <div class="text-center">
+                        <span class="error" id="resultado">
+                    </span>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-success" type="submit">Ingresar</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    <!-- Area para crear contenido dinámico -->
+    <p><br/><div></div><span id="resultado"></span></p></div></p>
+    <div id="app"></div>
+    <ul id="listado"></ul>
+    
+    <!-- Script a ser ejecutado -->
+    <script src="loginClient.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
